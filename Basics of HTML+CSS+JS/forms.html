@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Forms</title>
+</head>
+<body>
+    <h1>Some Forms</h1>
+    <div>
+        <h2>Submission Form</h2>
+        <form action="/random">
+            <p>
+                <label for="username">Enter username:</label>
+                <input id="username" type="text" placeholder="Username" name="username">
+            </p>
+            <p>
+                <label for="password">Enter password</label>
+                <input id="password" type="password" placeholder="Password">
+            </p>
+            <input type="color">
+            <input type="number">
+            <p>
+                <label for="time">Enter a time</label>
+                <input id="time" type="time">
+            </p>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Search Form</h2>
+        <p>
+            <form action="https://www.reddit.com/search">
+                <label for="reddit">Enter your search</label>
+                <input id="reddit" type="text" name="q"> <!--"q" refers to universal search variable-->
+                <button>Search Reddit</button>
+            </form>
+        </p>
+        <p>
+            <form action="https://www.google.com/search">
+                <label for="google">Enter your search</label>
+                <input id="google" type="text" name="q">
+                <button>Search Google</button>
+            </form>
+        </p>
+        <p>
+            <form action="https://www.youtube.com/results"> <!--for Youtube, it's "results"-->
+                <label for="youtube">Enter your search</label>
+                <input id="youtube" type="text" name="search_query"> <!--"for Youtube, it's "search_query"-->
+                <button>Search Youtube</button>
+            </form>
+        </p>
+    </div>
+</body>
+</html>
