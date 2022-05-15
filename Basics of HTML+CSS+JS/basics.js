@@ -134,3 +134,4 @@ let pop = arr.pop();
 arr.push(null); // add to last index
 arr.shift(); // removes at 1st index
 arr.unshift('100') // adds to 1st index\
+
