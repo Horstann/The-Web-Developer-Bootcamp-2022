@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Some Forms</title>
+    <script>
+        function greet(){
+            let name = document.querySelector('#username').value;
+            alert('Hello ' + name + '!');
+        }
+    </script>
 </head>
 <body>
     <h1>Some Forms</h1>
     <div>
         <h2>Submission Form</h2>
-        <form action="/random">
+        <form onsubmit="greet()">
             <p>
                 <label for="username">Enter username:</label>
                 <input id="username" type="text" placeholder="Username" name="username">
