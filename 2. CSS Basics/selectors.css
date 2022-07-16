@@ -1,0 +1,108 @@
+/*EXTERNAL STYLESHEET*/
+
+/*A) Element selectors*/
+h2 {
+    /*color*/
+    color: indigo;
+    background-color: plum;
+    /*text*/
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 15px;
+    line-height: 2;
+    text-decoration: #f78120 underline wavy;
+    font-family: Segoe UI, Futura, Arial; /*1st choice to last choice*/
+}
+
+body {
+    background-color: #f1faee;
+}
+
+/*Select everything*/
+* {
+    color: black;
+}
+
+/*Combine multiple selectors in a list*/
+h3, h4 {
+    color: darkslateblue;
+}
+
+
+/*B) ID selector*/
+#signup{
+    background-color: #1d3557;
+}
+
+
+/*C) Class selector - class can be applied to multiple elements*/
+.tag{
+    background-color: #e63946;
+}
+
+
+/*D) Descendent selector*/
+li a { /*Select all <a>'s that are nested  inside an <li>*/
+    color: teal;
+}
+.post a { /*Select all <a>'s in the class post*/
+    color: #456779;
+}
+
+
+/*E) Adjacent selector*/
+input + button { /*All buttons that come RIGHT after inputs*/
+    background-color: pink;
+}
+
+
+/*F) Direct Child selector*/
+div > li { /*li's that are a DIRECT child of a div*/
+    color: white;
+}
+
+
+/*G) Attribute selector*/
+input[type="password"] { /*Select input where type="password"*/
+    color: black;
+}
+section[class="post"] { /*Select section where class="post"*/
+    color: black;
+}
+section.post { /*Select only sections with class="post"*/
+    color: black;
+}
+a[href*="google"]{ /*Select <a>'s where href CONTAINS "example"*/
+    color: black;
+}
+
+
+/*H) Pseudo-classes*/
+a:hover { /*Selected when <a> is being hovered over*/
+    color:orange;
+}
+.post button:hover { /*Selected when <button> in <post> is being hovered over*/
+    color: orange;
+}
+button:active { /*When clicked*/
+    color: green;
+}
+.post:nth-of-type(3){ /*Select 3rd element with class="post"*/
+    background-color: #dfe8dc;
+}
+.post:nth-of-type(3n){ /*Select EVERY 3rd (eg. 3rd, 6th, 9th etc) element with class="post"*/
+    background-color: #dfe8dc;
+}
+
+
+/*I) Pseudo-elements*/
+h2::first-letter { /*Select 1st character of every <h2>*/
+    font-size: 30px;
+}
+p::first-line { /*Select 1st line of every <p>*/
+    color: purple;
+}
+p::selection { /*Select higglighted parts of every <h2>*/
+    background-color: yellow;
+}

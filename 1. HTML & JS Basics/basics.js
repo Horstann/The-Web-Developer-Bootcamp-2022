@@ -135,3 +135,30 @@ arr.push(null); // add to last index
 arr.shift(); // removes at 1st index
 arr.unshift('100') // adds to 1st index\
 
+// Objects (dictionaries)
+let data = {
+    username: 'crazyCatLady',
+    upvotes: 7,
+    text: 'great post!',
+    tags: ['#hilarious', '#funny', '#silly'],
+    isFunny: true,
+    2020: 234
+}
+// to access data out of objects
+data["2020"];
+data.2020;
+
+
+// for loops
+for (let i = 0; i < cars.length; i++){
+    ;
+}
+for (let item of arr){
+    ;
+}
+for (let key in data){
+    ;
+}
+
+
+

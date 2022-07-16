@@ -1,0 +1,42 @@
+#id {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#or {
+    border: medium dashed green; /*width style color*/
+}
+
+#padding {
+    padding: 20px;
+    padding: 5px 1px 0 2px;
+}
+
+#margin {
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin: 20px;
+}
+
+body {
+    display: none;
+    display: inline;
+    display: block;
+    display: inline-block;
+}
+
+/*Relative units*/
+section {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+div {
+    background-color: #e5989b;
+    width: 70%;
+    height: 20%;
+}
+
