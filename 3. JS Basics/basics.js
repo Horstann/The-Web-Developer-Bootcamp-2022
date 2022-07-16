@@ -146,19 +146,19 @@ let data = {
 }
 // to access data out of objects
 data["2020"];
-data.2020;
+//data.2020;
 
 
 // for loops
 for (let i = 0; i < cars.length; i++){
     ;
 }
-for (let item of arr){
+for (let value of arr){
     ;
 }
 for (let key in data){
     ;
 }
-
-
-
+for (let value of Object.values(data)){
+    ;
+}
