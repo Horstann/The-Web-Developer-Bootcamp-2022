@@ -1,0 +1,48 @@
+/*EXTERNAL STYLESHEET*/
+
+/*A) Element selectors*/
+h1 {
+    /*color*/
+    color: indigo;
+    background-color: plum;
+    /*text*/
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 15px;
+    line-height: 2;
+    text-decoration: #f78120 underline wavy;
+    font-family: Segoe UI, Futura, Arial; /*1st choice to last choice*/
+}
+
+body {
+    background-color: #f1faee;
+}
+
+/*Select everything*/
+* {
+    color: black;
+}
+
+/*Combine multiple selectors in a list*/
+h2 {
+    color: darkslateblue;
+}
+
+
+/*B) ID selector*/
+#chicken{
+    background-color: #1d3557;
+}
+
+
+/*C) Class selector - class can be applied to multiple elements*/
+.li{
+    background-color: #e63946;
+}
+
+
+/*D) Descendent selector*/
+li span { /*Select all <a>'s that are nested  inside an <li>*/
+    color: teal;
+}
