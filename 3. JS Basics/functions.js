@@ -185,4 +185,3 @@ setInterval(() => {
     console.log(Math.random())
 }, 2000) // for each 2sec, run Math.random()
 // this can be stopped by typing "clearInterval(id)"
-
