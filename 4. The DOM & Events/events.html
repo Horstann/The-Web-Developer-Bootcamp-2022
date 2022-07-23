@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <!--INLINE EVENTS - discouraged-->
+    <button onclick="alert('You clicked me!'); alert('Stop clicking me!')">Inline Events!</button>
+    <!--ALTERNATIVE - in js-->
+    <button id="v2">Events in JS!</button>
+    <!--EVENTLISTENER-->
+    <button id="v3">Event Listener!</button>
+
+    <br>
+    <!--EVENT OBJECTS-->
+    <button>CLICK</button>
+    <input type="text">
+    <br>
+    <h2>Cat Form</h2>
+    <form action="/shelter" id="form">
+        <input type="text" id="catName">
+        <button>Submit</button>
+    </form>
+    <h3 id="h3"></h3>
+    <h2>Available Cats</h2>
+    <ul id="cats"></ul>
+
+
+    <script src="events.js"></script>
+</body>
+</html>

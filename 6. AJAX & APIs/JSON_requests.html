@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Requests</title>
+</head>
+<body>
+    <h1>JSON Requests</h1>
+
+    <h2>STAR WARS!</h2>
+    <form>
+        <label for="starwars_id">Insert Star Wars person ID:</label>
+        <input type="number" id="starwars_id" placeholder="Person ID" min="1">
+        <button id="starwars_btn">Enter</button>
+    </form>
+    <ul id="starwars_ppl"></ul>
+
+    <h2>DAD JOKES!</h2>
+    <button id="jokes_btn">Click here for a dad joke</button>
+    <ul id="jokes"></ul>
+
+    <h2>TV SHOW SEARCH!</h2>
+    <form id="searchForm">
+        <input type="text" placeholder="TV Show Title" name="query">
+        <button>Search</button>
+    </form>
+    <div id="TVshows"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="JSON_requests.js"></script>
+</body>
+</html>
