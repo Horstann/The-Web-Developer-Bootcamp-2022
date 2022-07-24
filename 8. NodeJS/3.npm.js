@@ -19,3 +19,19 @@ To install globally, do
 And to use globally installed packages in a directory, type this in console
 'npm link ...'
 */
+
+
+// Keeping track of packages & their versions
+/*
+1. Go to terminal & navigate to directory
+2. 'npm init' -> creates package.json
+3. do 'npm i ...' to install all packages you want
+4. automatically, all packages installed & their versions will appear in packages.json -> "dependencies"
+
+To install someone else's packages, just navigate to directory with their package.json
+and type 'npm install'
+*/
+// navigate to package.json -> "dependencies"
+
+
+
