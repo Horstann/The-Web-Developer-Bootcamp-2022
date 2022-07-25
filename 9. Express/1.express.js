@@ -27,7 +27,7 @@ app.listen(3000, () => {
 
 // Adding routes
 app.get('/', (req, res) => {
-    res.send('<h1>This is the homepage!</h1>');
+    res.send('<h1>Welcome to the homepage!</h1>');
 })
 app.get('/r/:subreddit', (req, res) => { // anything that matches this pattern
     const {subreddit} = req.params;
@@ -45,6 +45,14 @@ app.get('/cats', (req, res) => {
 })
 app.get('/dogs', (req, res) => {
     res.send('WOOF!!');
+})
+// query string! '/search?q=<query_string>'
+app.get('/search', (req, res) => {
+    const {q} = req.query;
+    if(!q){
+        res.send('<h1>NOTHING FOUND IF NOTHING SEARCHED!</h1>')
+    }
+    res.send(`<h1>Search results for: ${q}</h1>`);
 })
 // every other route not listed here
 // but have to be after all app.get()s in code
