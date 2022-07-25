@@ -10,6 +10,9 @@ app.set('views', path.join(__dirname, '/views'));
 // some json data to play with
 const redditData = require('./data.json');
 
+// allow HTML files access to files (eg. CSS) in 'public' folder without having to reference path/directory
+app.use(express.static(path.join(__dirname,'public')));
+
 app.get('/', (req, res) => {
     res.render('home.ejs'); // connect to EJS file
 })
