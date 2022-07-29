@@ -48,6 +48,7 @@ var comments = [
     }
 ]
 
+
 app.get('/comments', (req, res) => {
     res.render('comments/index.ejs', {comments});
 })
@@ -87,6 +88,11 @@ app.delete('/comments/:id', (req, res) => {
 })
 
 
+
+
+
+// POST vs GET example
+/*
 app.get('/tacos', (req, res) => {
     //console.log(req.body);
     res.send('GET /tacos response');
@@ -96,8 +102,8 @@ app.post('/tacos', (req, res) => {
     const {meat, qty} = req.body;
     res.send(`OK here are your ${qty} ${meat} tacos!`);
 })
+*/
 
 app.listen(3000, () => {
     console.log("LISTENING ON PORT 3000");
 })
-
