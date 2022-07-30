@@ -11,9 +11,9 @@ Open 'mongod' in windows powershell & run the below in terminal
 - .load mongoose.js
 */
 
-const mongoose = require('mongoose'); //27017
+const mongoose = require('mongoose');
 // access the 'movieApp' database. If doesn't exist, it creates one
-mongoose.connect('mongodb://localhost:27017/movieApp') //{useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb://localhost:27017/movieApp', {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => {
         console.log('CONNECTION OPEN!');
     })
